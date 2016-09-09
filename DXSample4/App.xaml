@@ -1,0 +1,11 @@
+﻿<Application x:Class="DXSample4.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxSample4="clr-namespace:DXSample4"
+             StartupUri="MainWindow.xaml" Startup="OnAppStartup_UpdateThemeName">
+    <Application.Resources>
+         <Style TargetType="dxSample4:LongLoadingControl" BasedOn="{StaticResource {x:Type Button}}">
+             <Setter Property="Content" Value="This Button took ages to initalize!" />
+         </Style>
+    </Application.Resources>
+</Application>
